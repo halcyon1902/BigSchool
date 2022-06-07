@@ -1,24 +1,40 @@
 ﻿using Big_School.Models;
-using System;
-using System.Collections.Generic;
+using Big_School.ViewModels;
+using Microsoft.AspNet.Identity;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Big_School.Controllers
 {
-    
     public class CoursesController : Controller
     {
-        private ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
+
         public CoursesController()
         {
             _dbContext = new ApplicationDbContext();
         }
+
         // GET: Courses
-        public ActionResult Create()
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(CourseViewModel viewModel)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                viewModel.Categories = _dbContext.Categories.ToList();
+                return View("Create",viewModel);
+            }
+            var course = new Course
+            {
+                LecturrerID = User.Identity.GetUserId(),
+                DateTime = viewModel.GetDateTime(),
+                CategoryId = viewModel.Category,
+                Place = viewModel.Place
+            };
+            _dbContext.Courses.Add(course);
+            _dbContext.SaveChanges();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

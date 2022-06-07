@@ -17,7 +17,7 @@ namespace Big_School.Models
             get;set;
         }
         [Required]
-        public string LectureID
+        public string LecturrerID
         {
             get;set;
         }

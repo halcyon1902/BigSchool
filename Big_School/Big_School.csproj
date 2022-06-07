@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,7 +88,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
@@ -100,8 +103,10 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -202,17 +207,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206010156345_Init.cs" />
-    <Compile Include="Migrations\202206010156345_Init.Designer.cs">
-      <DependentUpon>202206010156345_Init.cs</DependentUpon>
+    <Compile Include="Migrations\202206071914420_Init.cs" />
+    <Compile Include="Migrations\202206071914420_Init.Designer.cs">
+      <DependentUpon>202206071914420_Init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206010221558_CreateTableCourse.cs" />
-    <Compile Include="Migrations\202206010221558_CreateTableCourse.Designer.cs">
-      <DependentUpon>202206010221558_CreateTableCourse.cs</DependentUpon>
+    <Compile Include="Migrations\202206071915424_CreateTableCourse.cs" />
+    <Compile Include="Migrations\202206071915424_CreateTableCourse.Designer.cs">
+      <DependentUpon>202206071915424_CreateTableCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206010251170_PopulateCategoryTable.cs" />
-    <Compile Include="Migrations\202206010251170_PopulateCategoryTable.Designer.cs">
-      <DependentUpon>202206010251170_PopulateCategoryTable.cs</DependentUpon>
+    <Compile Include="Migrations\202206071916238_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\202206071916238_PopulateCategoryTable.Designer.cs">
+      <DependentUpon>202206071916238_PopulateCategoryTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -299,14 +304,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206010156345_Init.resx">
-      <DependentUpon>202206010156345_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206071914420_Init.resx">
+      <DependentUpon>202206071914420_Init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206010221558_CreateTableCourse.resx">
-      <DependentUpon>202206010221558_CreateTableCourse.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206071915424_CreateTableCourse.resx">
+      <DependentUpon>202206071915424_CreateTableCourse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206010251170_PopulateCategoryTable.resx">
-      <DependentUpon>202206010251170_PopulateCategoryTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206071916238_PopulateCategoryTable.resx">
+      <DependentUpon>202206071916238_PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
