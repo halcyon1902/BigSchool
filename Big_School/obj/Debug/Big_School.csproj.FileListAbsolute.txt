@@ -174,3 +174,4 @@ D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.PopulateCategoryT
 D:\GitHub\BigSchool\Big_School\bin\System.Net.Http.dll
 D:\GitHub\BigSchool\Big_School\bin\System.Net.Http.WebRequest.dll
 D:\GitHub\BigSchool\Big_School\bin\System.Web.dll
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.AssemblyReference.cache
