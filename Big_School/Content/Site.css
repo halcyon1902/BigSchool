@@ -22,3 +22,50 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Override the default bootraps Nar bar by bee*/
+.navbar-inverse {
+    background-color: hotpink;
+    border-color: black;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+.course {
+    list-style: none;
+}
+
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li .detail {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+        }
+
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }
