@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Big_School.Models
 {
@@ -11,7 +10,7 @@ namespace Big_School.Models
         {
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(Convert.ToString(value), "dd/M/yyyy", CultureInfo.CurrentCulture, DateTimeStyles.None, out dateTime);
-            return (isValid && dateTime > DateTime.Now)
+            return (isValid && dateTime > DateTime.Now);
         }
     }
 }
