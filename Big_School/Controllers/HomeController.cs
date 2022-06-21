@@ -1,21 +1,21 @@
 ﻿using Big_School.Models;
 using Big_School.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 using System.Data.Entity;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace Big_School.Controllers
 {
     public class HomeController : Controller
     {
         private ApplicationDbContext _dbContext;
+
         public HomeController()
         {
             _dbContext = new ApplicationDbContext();
         }
+
         public ActionResult Index()
         {
             var upcomingCourse = _dbContext.Courses
@@ -23,13 +23,12 @@ namespace Big_School.Controllers
                 .Include(c => c.Category)
                 .Where(c => c.DateTime > DateTime.Now);
 
-            /*           var viewModel = new CourseViewModel
-                       {
-                           UpCommingCourses = upcomingCourse,
-                           ShowAction = User.Identity.IsAuthenticated
-                       };
-                       return View(viewModel);*/
-            return View(upcomingCourse);
+            var viewModel = new CourseViewModel
+            {
+                UpCommingCourses = upcomingCourse,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View(viewModel);
         }
 
         public ActionResult About()

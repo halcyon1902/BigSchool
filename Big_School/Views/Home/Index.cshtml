@@ -1,10 +1,11 @@
-﻿@{
+﻿@model Big_School.ViewModels.CourseViewModel
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="row">
     <ul class="course" style="list-style: none">
-        @foreach (var course in Model)
+        @foreach (var course in Model.UpComingCourses)
         {
             <li style="position: relative; margin-bottom: 30px">
                 <div class="date" style="text-align: center; background-color: #d41d50; color: white; width: 60px; border-radius: 8px">
@@ -34,4 +35,33 @@
             </li>
         }
     </ul>
+    @section scripts
+{
+        <script>
+            $(document).ready(function () {
+                $(".js-toggle-attendace").click(function (e) {
+                    var button = $(e.target);
+                    $.post("/api/attendances", { courseId: button.attr("data-course-id") })
+                        .done(function () {
+                            button.removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Going");
+                        })
+                        .fail(function () {
+                            alert("Something goes wrong");
+                        });
+                });
+                $(".js-toggle-follow").click(function (e) {
+                    var button = $(e.target);
+                    $.post("/api/followings", { followeeId: button.attr("data-user-id") })
+                        .done(function () {
+                            button.text("Following")
+                        })
+                        .fail(function () {
+                            alert("Something goes wrong");
+                        });
+                });
+            });
+        </script>
+    }
 </div>

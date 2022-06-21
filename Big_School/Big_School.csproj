@@ -209,8 +209,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,6 +237,10 @@
     <Compile Include="Migrations\202206202027425_AddAttendance.Designer.cs">
       <DependentUpon>202206202027425_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206210402345_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\202206210402345_AddFollowingsTable.Designer.cs">
+      <DependentUpon>202206210402345_AddFollowingsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -241,6 +248,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="Models\FutureDate.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -318,6 +326,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Followings\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Project_Readme.html" />
@@ -337,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206202027425_AddAttendance.resx">
       <DependentUpon>202206202027425_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206210402345_AddFollowingsTable.resx">
+      <DependentUpon>202206210402345_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

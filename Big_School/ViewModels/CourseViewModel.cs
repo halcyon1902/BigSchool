@@ -3,8 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
-using System.Linq;
-using System.Web;
+
 namespace Big_School.ViewModels
 {
     public class CourseViewModel
@@ -30,5 +29,8 @@ namespace Big_School.ViewModels
             /*return DateTime.Parse(string.Format("{0} {1}", Date, Time));*/
             return DateTime.ParseExact(Date + " " + Time, "dd/MM/yyyy hh:mm", CultureInfo.InvariantCulture);
         }
+
+        public IEnumerable<Course> UpCommingCourses { get; set; }
+        public bool ShowAction { get; set; }
     }
 }
