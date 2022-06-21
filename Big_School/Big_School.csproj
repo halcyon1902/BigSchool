@@ -217,29 +217,29 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206071914420_Init.cs" />
-    <Compile Include="Migrations\202206071914420_Init.Designer.cs">
-      <DependentUpon>202206071914420_Init.cs</DependentUpon>
+    <Compile Include="Migrations\202206211908240_Init.cs" />
+    <Compile Include="Migrations\202206211908240_Init.Designer.cs">
+      <DependentUpon>202206211908240_Init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206071915424_CreateTableCourse.cs" />
-    <Compile Include="Migrations\202206071915424_CreateTableCourse.Designer.cs">
-      <DependentUpon>202206071915424_CreateTableCourse.cs</DependentUpon>
+    <Compile Include="Migrations\202206211922385_CreateTableCourse.cs" />
+    <Compile Include="Migrations\202206211922385_CreateTableCourse.Designer.cs">
+      <DependentUpon>202206211922385_CreateTableCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206071916238_PopulateCategoryTable.cs" />
-    <Compile Include="Migrations\202206071916238_PopulateCategoryTable.Designer.cs">
-      <DependentUpon>202206071916238_PopulateCategoryTable.cs</DependentUpon>
+    <Compile Include="Migrations\202206211923172_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\202206211923172_PopulateCategoryTable.Designer.cs">
+      <DependentUpon>202206211923172_PopulateCategoryTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206201830525_AddNameColumnToApplicationUser.cs" />
-    <Compile Include="Migrations\202206201830525_AddNameColumnToApplicationUser.Designer.cs">
-      <DependentUpon>202206201830525_AddNameColumnToApplicationUser.cs</DependentUpon>
+    <Compile Include="Migrations\202206211926569_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202206211926569_AddNameColumnToApplicationUser.Designer.cs">
+      <DependentUpon>202206211926569_AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206202027425_AddAttendance.cs" />
-    <Compile Include="Migrations\202206202027425_AddAttendance.Designer.cs">
-      <DependentUpon>202206202027425_AddAttendance.cs</DependentUpon>
+    <Compile Include="Migrations\202206211927246_AddAttendance.cs" />
+    <Compile Include="Migrations\202206211927246_AddAttendance.Designer.cs">
+      <DependentUpon>202206211927246_AddAttendance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206210402345_AddFollowingsTable.cs" />
-    <Compile Include="Migrations\202206210402345_AddFollowingsTable.Designer.cs">
-      <DependentUpon>202206210402345_AddFollowingsTable.cs</DependentUpon>
+    <Compile Include="Migrations\202206211927501_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\202206211927501_AddFollowingsTable.Designer.cs">
+      <DependentUpon>202206211927501_AddFollowingsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -332,23 +332,23 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206071914420_Init.resx">
-      <DependentUpon>202206071914420_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211908240_Init.resx">
+      <DependentUpon>202206211908240_Init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206071915424_CreateTableCourse.resx">
-      <DependentUpon>202206071915424_CreateTableCourse.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211922385_CreateTableCourse.resx">
+      <DependentUpon>202206211922385_CreateTableCourse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206071916238_PopulateCategoryTable.resx">
-      <DependentUpon>202206071916238_PopulateCategoryTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211923172_PopulateCategoryTable.resx">
+      <DependentUpon>202206211923172_PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206201830525_AddNameColumnToApplicationUser.resx">
-      <DependentUpon>202206201830525_AddNameColumnToApplicationUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211926569_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202206211926569_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206202027425_AddAttendance.resx">
-      <DependentUpon>202206202027425_AddAttendance.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211927246_AddAttendance.resx">
+      <DependentUpon>202206211927246_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206210402345_AddFollowingsTable.resx">
-      <DependentUpon>202206210402345_AddFollowingsTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206211927501_AddFollowingsTable.resx">
+      <DependentUpon>202206211927501_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

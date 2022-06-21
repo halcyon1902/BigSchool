@@ -1,11 +1,10 @@
-﻿@model Big_School.ViewModels.CourseViewModel
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="row">
     <ul class="course" style="list-style: none">
-        @foreach (var course in Model.UpComingCourses)
+        @foreach (var course in Model.UpCommingCourses)
         {
             <li style="position: relative; margin-bottom: 30px">
                 <div class="date" style="text-align: center; background-color: #d41d50; color: white; width: 60px; border-radius: 8px">

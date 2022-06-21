@@ -6,7 +6,7 @@ namespace Big_School.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Big_School.Models.ApplicationDbContext context)

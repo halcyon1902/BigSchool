@@ -84,12 +84,6 @@ E:\Big_School\Big_School\obj\Debug\Big_School.csproj.GenerateResource.Cache
 E:\Big_School\Big_School\obj\Debug\Big_School.Migrations.CreateTableCourse.resources
 E:\Big_School\Big_School\obj\Debug\Big_School.csprojResolveAssemblyReference.cache
 E:\Big_School\Big_School\obj\Debug\Big_School.Migrations.PopulateCategoryTable.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.Init.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.CreateTableCourse.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.PopulateCategoryTable.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddNameColumnToApplicationUser.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddAttendance.resources
-D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.GenerateResource.cache
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.CoreCompileInputs.cache
 D:\GitHub\BigSchool\Big_School\bin\ApplicationInsights.config
 D:\GitHub\BigSchool\Big_School\bin\roslyn\csc.exe
@@ -202,4 +196,10 @@ D:\GitHub\BigSchool\Big_School\bin\zh-TW\Hangfire.Core.resources.dll
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.CopyComplete
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.dll
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.pdb
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.Init.resources
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.GenerateResource.cache
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.CreateTableCourse.resources
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.PopulateCategoryTable.resources
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddNameColumnToApplicationUser.resources
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddAttendance.resources
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddFollowingsTable.resources

@@ -1,13 +1,14 @@
 namespace Big_School.Migrations
 {
+    using System;
     using System.Data.Entity.Migrations;
-
-    public partial class CreateTableCourse : DbMigration
+    
+    public partial class AddNameColumnToApplicationUser : DbMigration
     {
         public override void Up()
         {
         }
-
+        
         public override void Down()
         {
         }
