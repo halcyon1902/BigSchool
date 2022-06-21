@@ -203,3 +203,4 @@ D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.PopulateCategoryT
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddNameColumnToApplicationUser.resources
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddAttendance.resources
 D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.Migrations.AddFollowingsTable.resources
+D:\GitHub\BigSchool\Big_School\obj\Debug\Big_School.csproj.AssemblyReference.cache
